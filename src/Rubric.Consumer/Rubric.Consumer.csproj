@@ -1,0 +1,31 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+    <PropertyGroup>
+        <OutputType>Exe</OutputType>
+        <TargetFramework>net7.0</TargetFramework>
+        <ImplicitUsings>enable</ImplicitUsings>
+        <Nullable>enable</Nullable>
+    </PropertyGroup>
+
+    <ItemGroup>
+      <ProjectReference Include="..\Rubric.Common\Rubric.Common.csproj" />
+      <ProjectReference Include="..\Rubric.Contracts\Rubric.Contracts.csproj" />
+      <ProjectReference Include="..\Rubric.Infastructure\Rubric.Infastructure.csproj" />
+      <ProjectReference Include="..\Rubric.Persistence.PostgreSQL\Rubric.Persistence.PostgreSQL.csproj" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <Folder Include="Consumers\Statement" />
+      <Folder Include="Repositories" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <PackageReference Include="MassTransit" Version="8.0.11" />
+      <PackageReference Include="MassTransit.RabbitMQ" Version="8.0.11" />
+      <PackageReference Include="Microsoft.EntityFrameworkCore" Version="7.0.2" />
+      <PackageReference Include="Microsoft.Extensions.Diagnostics.HealthChecks" Version="7.0.2" />
+      <PackageReference Include="Microsoft.Extensions.Hosting" Version="7.0.0" />
+      <PackageReference Include="Npgsql.EntityFrameworkCore.PostgreSQL" Version="7.0.1" />
+    </ItemGroup>
+
+</Project>

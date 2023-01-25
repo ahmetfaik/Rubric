@@ -1,0 +1,1 @@
+# Db üzerinde tüm script'ler burada yer alacak.
